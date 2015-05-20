@@ -71,6 +71,9 @@ install: build
 	cp debian/libxenomai-dev.lintian $(CURDIR)/debian/libxenomai-dev/usr/share/lintian/overrides/libxenomai-dev
 	mkdir -p $(CURDIR)/debian/xenomai-kernel-source/usr/src/xenomai-kernel-source $(CURDIR)/debian/xenomai-kernel-source/usr/share/doc/xenomai-kernel-source
 	cp -a kernel include scripts $(CURDIR)/debian/xenomai-kernel-source/usr/src/xenomai-kernel-source
+	mkdir -p $(CURDIR)/debian/xenomai-kernel-source/usr/src/xenomai-kernel-source/config
+	cp config/version-* \
+	    $(CURDIR)/debian/xenomai-kernel-source/usr/src/xenomai-kernel-source/config
 
 # Build architecture-independent files here.
 binary-indep: build install
