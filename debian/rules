@@ -40,6 +40,7 @@ build-indep-stamp: config.status
 config.status: configure-stamp
 configure-stamp:
 	dh_testdir
+	autoreconf -fiI config
 	./configure $(CONFIG_OPTS)
 	touch configure-stamp
 
