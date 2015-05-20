@@ -1,3 +1,9 @@
+xenomai (3.0rc4-1) UNRELEASED; urgency=low
+
+  * Update to 3.0rc4
+
+ -- John Morris <john@dovetail-automata.com>  Sat, 16 May 2015 22:11:38 -0500
+
 xenomai (2.99.0) UNRELEASED; urgency=low
 
   * Prepare Debian packaging for Xenomai-forge
